@@ -27,7 +27,7 @@ public class WelcomeScreen extends JFrame {
 			this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 			this.setUndecorated(true);
 			this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-			ImageIcon img = new ImageIcon("LIB\\background.jpg");
+			ImageIcon img = new ImageIcon("\\background.jpg");
 			backgroundL = new JLabel("", img, JLabel.CENTER);
 			backgroundL.setBounds(0, 0, 1920, 1080);
 			GridBagLayout layout = new GridBagLayout();
