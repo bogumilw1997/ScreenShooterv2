@@ -2,12 +2,15 @@ package Package1;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.Action;
 import javax.swing.Icon;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 
 public class FancyButton extends JButton {
 
@@ -29,6 +32,17 @@ public class FancyButton extends JButton {
 			public void mouseExited(MouseEvent e) {
 				setBackground(Color.BLUE);
 				setForeground(Color.WHITE);
+			}
+		});
+	}
+	
+	public void setALvis(JFrame FR) {
+		this.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				FR.setVisible(true);
 			}
 		});
 	}

@@ -27,7 +27,7 @@ public class SettingsScreen extends JFrame {
     	this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setUndecorated(true);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        ImageIcon img = new ImageIcon("pic/background.jpg");
+        ImageIcon img = new ImageIcon("./background.jpg");
         backgroundL = new JLabel("", img, JLabel.CENTER);
         backgroundL.setBounds(0, 0, 1920, 1080);
         GridBagLayout layout = new GridBagLayout();
@@ -64,14 +64,4 @@ public class SettingsScreen extends JFrame {
         backgroundL.add(returnB, a);
     }
 	
-	public void setAL(FancyButton FB, JFrame FR) {
-		FB.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				FR.setVisible(true);
-			}
-		});
-	}
 }

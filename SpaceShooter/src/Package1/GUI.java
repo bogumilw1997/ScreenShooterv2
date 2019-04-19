@@ -14,8 +14,8 @@ public class GUI extends JPanel {
 		SettingsScreen settS = new SettingsScreen();
 		settS.setVisible(false);
 		
-		settS.setAL(settS.returnB, welcS);
-		welcS.setAL(welcS.settingsB, settS);
+		settS.returnB.setALvis(welcS);
+		welcS.settingsB.setALvis(settS);
 		
 	}
 
