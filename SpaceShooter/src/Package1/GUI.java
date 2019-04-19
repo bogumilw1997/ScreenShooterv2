@@ -14,19 +14,8 @@ public class GUI extends JPanel {
 		SettingsScreen settS = new SettingsScreen();
 		settS.setVisible(false);
 		
-		welcS.settingsB.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				settS.setVisible(true);
-			}
-		});
-		
-		settS.returnB.addActionListener(new ActionListener() {
-			 @Override
-	         public void actionPerformed(ActionEvent arg0) {
-				 welcS.setVisible(true);
-	        }
-	    });
+		settS.setAL(settS.returnB, welcS);
+		welcS.setAL(welcS.settingsB, settS);
 		
 	}
 

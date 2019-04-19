@@ -7,6 +7,8 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.HeadlessException;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -19,6 +21,7 @@ public class SettingsScreen extends JFrame {
     FancyButton musicB;
     JLabel backgroundL;
     JLabel titleL;
+    
 	public SettingsScreen() throws HeadlessException {
 
     	this.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -60,4 +63,15 @@ public class SettingsScreen extends JFrame {
         a.gridy = 4;
         backgroundL.add(returnB, a);
     }
+	
+	public void setAL(FancyButton FB, JFrame FR) {
+		FB.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				FR.setVisible(true);
+			}
+		});
+	}
 }
