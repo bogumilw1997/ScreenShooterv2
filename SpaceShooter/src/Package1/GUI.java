@@ -13,10 +13,12 @@ public class GUI extends JPanel {
 		welcS.setVisible(true);
 		SettingsScreen settS = new SettingsScreen();
 		settS.setVisible(false);
-		
+		GameScreen gameS = new GameScreen();
+	    gameS.setVisible(false);
+	    
 		settS.returnB.setALvis(welcS);
 		welcS.settingsB.setALvis(settS);
-		
+		welcS.playB.setALvis(gameS);
 	}
 
 }
